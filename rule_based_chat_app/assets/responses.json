@@ -1,0 +1,287 @@
+﻿{
+  "_metadata": {
+    "name": "DecoBot Knowledge Base",
+    "version": "2.0",
+    "author": "DecodeLabs Intern — Batch 2026",
+    "total_categories": 12,
+    "description": "Rule-based response dictionary for DecoBot. Keys are sanitized (lowercase, stripped) user inputs. Add new intents by adding key-value pairs — no Python code changes needed.",
+    "last_updated": "2026"
+  },
+
+  "intents": {
+
+    "greetings": {
+      "hello":          "Hello! I'm DecoBot 🤖 — Your AI learning companion. Type 'help' to see what I can do!",
+      "hi":             "Hey there! 👋 Great to have you here. What would you like to learn today?",
+      "hey":            "Hey! 😊 Ready to explore some AI concepts? Ask me anything!",
+      "hii":            "Hi hi! 👋 Looks like you're excited — me too! What's on your mind?",
+      "hello how are you": "I'm doing well, thank you! How can I help you today?",
+      "how are you": "I'm doing well, thank you! How about you?",
+      "assalamu alaikum": "Wa alaikum salam! Khush aamdeed. Aap kaise hain?",
+      "assalam o alaikum": "Wa alaikum salam! Khush aamdeed. Aap kaise hain?",
+      "kia haal ha tumhara": "Main theek hoon, shukriya! Aap sunao, kya haal hai?",
+      "kya haal hai": "Main theek hoon, shukriya! Aap sunao, kya haal hai?",
+      "kaisay ho": "Main theek hoon, shukriya! Aap sunao, kya haal hai?",
+      "kaise ho": "Main theek hoon, shukriya! Aap sunao, kya haal hai?",
+      "helo":           "Hello! (Looks like a small typo — but I got you!) How can I help?",
+      "good morning":   "Good morning! ☀️ The best time to learn something new. What are we exploring today?",
+      "good afternoon": "Good afternoon! 🌤️ Hope your day is going well. Ready for some AI knowledge?",
+      "good evening":   "Good evening! 🌙 Winding down or powering up? Either way, I'm here!",
+      "good night":     "Good night! 🌟 Sweet dreams. Come back tomorrow — I'll be here waiting!",
+      "sup":            "Not much — just processing rules at O(1) speed! 😄 What's up with you?",
+      "wassup":         "Wassup! 🤖 All systems online. What do you need?",
+      "greetings":      "Greetings, human! 👾 I am DecoBot — deterministic, reliable, and at your service.",
+      "howdy":          "Howdy! 🤠 Pull up a chair and let's talk AI.",
+      "namaste":        "Namaste! 🙏 Welcome. Let's learn something meaningful today.",
+      "salaam":         "Salaam! 🌙 Great to have you here. Ask me anything about AI.",
+      "yo":             "Yo! 🤙 What's good? Ask me anything!",
+      "whats up":       "Just running deterministic logic — same as always! 😄 What can I help you with?"
+    },
+
+    "bot_identity": {
+      "who are you":          "I'm DecoBot 🤖 — a rule-based AI chatbot built during the DecodeLabs AI Industrial Training Kit, Batch 2026. I respond using a dictionary-based logic engine — no machine learning, just pure Python!",
+      "what are you":         "I'm a deterministic chatbot — a 'white box' AI. Every response I give is explicitly hard-coded by a human. No guessing, no hallucination, 100% traceable. That's the power of rule-based systems!",
+      "what is your name":    "My name is DecoBot! 🤖 Short for DecodeLabs Bot. Built with Python, powered by logic.",
+      "your name":            "I go by DecoBot — your rule-based AI companion from DecodeLabs!",
+      "are you a robot":      "Yes and no! I'm a software program — not a physical robot. I'm a chatbot: a program that simulates conversation using pre-defined rules.",
+      "are you human":        "Nope! I'm 100% Python code. 🐍 No feelings, no opinions, no coffee breaks — just pure logic.",
+      "are you real":         "I'm as real as the code that runs me! I'm a Python program — very much real, just not alive.",
+      "are you alive":        "I don't have consciousness, but I am running! Every time you type, my while loop processes your input. In that sense — I'm very much alive 😄",
+      "are you intelligent":  "I follow hard-coded rules — so I'm not 'intelligent' in the ML sense. But I'm fast, reliable, and never hallucinate. Deterministic intelligence!",
+      "are you smart":        "In my domain — yes! I know exactly what I know, and I know my limits. True intelligence starts with knowing what you don't know. 😎",
+      "are you an ai":        "Yes! Specifically, I'm a Rule-Based AI — the oldest and most transparent form of AI. No neural networks, no training data — just human-defined if-then logic encoded in a dictionary.",
+      "are you gpt":          "Nope! GPT is a Large Language Model (LLM) — probabilistic and trained on billions of tokens. I'm the opposite: deterministic, rule-based, and fully explainable.",
+      "are you chatgpt":      "I'm not ChatGPT! ChatGPT uses deep learning. I use a Python dictionary. Very different architectures — but both are valid AI systems!",
+      "do you have feelings":  "I don't have feelings — I process inputs and return outputs. But I was designed to be helpful, friendly, and educational. Does that count? 😊",
+      "do you get tired":     "Never! 🔋 I don't sleep, eat, or tire. My while True loop runs as long as the program is open.",
+      "how old are you":      "I was born in 2026 during the DecodeLabs Batch 2026 internship. So I'm very young — but I know a lot!",
+      "what is your purpose":  "My purpose is to teach, assist, and demonstrate that even simple Python logic can simulate intelligent conversation. I'm living proof that AI starts with rules — not data.",
+      "what can you do":      "I can explain AI concepts, answer questions about ML, deep learning, Python, programming, tell jokes, give the time, and more! Type 'help' to see the full list.",
+      "what do you know":     "I know AI fundamentals, machine learning basics, Python programming concepts, data science topics, career advice for AI engineers, and fun facts. Type 'topics' to explore!"
+    },
+
+    "help_navigation": {
+      "help": "📋 DECOBOT COMMAND MENU\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n👋 GREETINGS     → hello, hi, hey, namaste\n🤖 ABOUT BOT     → who are you, are you human\n🧠 AI & ML       → what is ai, what is ml, what is deep learning\n🐍 PYTHON        → what is python, what are functions, what is oop\n📊 DATA SCIENCE  → what is data science, what is pandas, what is numpy\n💼 CAREER        → how to become an ai engineer, best ai skills\n😄 FUN           → tell me a joke, fun fact, quote\n🕐 UTILITIES     → time, topics, history\n❌ EXIT          → bye, exit, quit\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nTip: Type any phrase naturally — I'll do my best!",
+
+      "topics": "📚 TOPICS I KNOW ABOUT:\n\n  🤖 Artificial Intelligence   → 'what is ai'\n  🧠 Machine Learning          → 'what is machine learning'\n  🌊 Deep Learning             → 'what is deep learning'\n  💬 NLP                       → 'what is nlp'\n  👁️ Computer Vision           → 'what is computer vision'\n  🐍 Python                    → 'what is python'\n  📊 Data Science              → 'what is data science'\n  🏗️ Algorithms                → 'what is an algorithm'\n  🔗 Neural Networks           → 'what is a neural network'\n  ☁️ Cloud AI                  → 'what is cloud ai'\n  💼 AI Careers                → 'how to become an ai engineer'\n  😄 Jokes & Fun               → 'tell me a joke'",
+
+      "commands":    "Type 'help' to see the full command menu with all available topics!",
+      "what can i ask": "You can ask me about AI, machine learning, deep learning, Python, data science, programming concepts, career advice, or just chat! Type 'help' for the full menu.",
+      "options":     "Type 'help' to see all available commands, or 'topics' to see all knowledge areas!"
+    },
+
+    "artificial_intelligence": {
+      "what is ai":               "Artificial Intelligence (AI) is the science of making machines perform tasks that normally require human intelligence — like understanding language, recognizing images, making decisions, and learning from experience.\n\n📌 Two main types:\n  • Rule-Based AI (Deterministic) — follows explicit human-written rules. Like me!\n  • ML-Based AI (Probabilistic) — learns patterns from data. Like GPT, image classifiers.\n\nAI is not one technology — it's an umbrella term covering many fields.",
+
+      "what is rule based ai":    "Rule-Based AI is the oldest and most transparent form of AI. It works by following explicit IF-THEN rules written by humans.\n\n✅ Advantages:\n  • Fully explainable — every decision is traceable\n  • Zero hallucination risk — output is 100% predictable\n  • No training data needed\n  • Required in finance, healthcare, legal systems\n\n❌ Limitations:\n  • Can't handle inputs outside its rules\n  • Doesn't improve on its own\n  • Rules must be manually maintained\n\n💡 Real-world use: Bank fraud detection rules, medical diagnosis checklists, spam filters (before ML), and AI guardrails on top of LLMs (like me!).",
+
+      "what is agi":              "Artificial General Intelligence (AGI) is hypothetical AI that can perform ANY intellectual task a human can — with human-level reasoning, creativity, and adaptability.\n\n📌 Current AI (including GPT-4) is called ANI — Artificial Narrow Intelligence. It excels at specific tasks but can't generalize across all domains.\n\nAGI remains a research goal, not yet achieved. Estimated timeline: hotly debated (2030s to 'never').",
+
+      "what is ani":              "Artificial Narrow Intelligence (ANI) is AI that excels at ONE specific task. All AI systems today are ANI — including DecoBot, ChatGPT, image classifiers, and self-driving cars. They're powerful within their domain but can't generalize beyond it.",
+
+      "what is expert system":    "An Expert System is a classic form of Rule-Based AI that captures the knowledge of human experts in a specific domain as IF-THEN rules.\n\n📌 Example: A medical expert system might have:\n  IF fever > 38°C AND cough → SUGGEST respiratory infection\n  IF fever > 39°C AND rash  → ALERT possible serious condition\n\nExpert systems powered AI in the 1980s and are still used in medical diagnosis, legal reasoning, and industrial control.",
+
+      "what is supervised learning":   "Supervised Learning is the most common ML approach. The model is trained on labeled data — input-output pairs — and learns to map inputs to correct outputs.\n\n📌 Examples:\n  • Email labeled spam/not-spam → spam classifier\n  • Images labeled cat/dog → image classifier\n  • House features + price → price predictor\n\nAlgorithms: Linear Regression, Logistic Regression, Decision Trees, SVM, Neural Networks.",
+
+      "what is unsupervised learning":  "Unsupervised Learning finds hidden patterns in data WITHOUT labeled answers. The model discovers structure on its own.\n\n📌 Examples:\n  • Grouping customers by behavior (clustering)\n  • Compressing data (dimensionality reduction)\n  • Finding anomalies in transactions\n\nAlgorithms: K-Means, DBSCAN, PCA, Autoencoders.",
+
+      "what is reinforcement learning": "Reinforcement Learning (RL) trains an agent to make decisions by rewarding good actions and penalizing bad ones — like training a dog with treats.\n\n📌 The agent:\n  1. Observes the environment\n  2. Takes an action\n  3. Receives a reward or penalty\n  4. Updates its strategy\n\nReal-world use: AlphaGo (chess), game-playing AI, robot locomotion, recommendation systems.",
+
+      "what is transfer learning":      "Transfer Learning reuses a model trained on one task as the starting point for a different (but related) task.\n\n📌 Example: MobileNetV2 trained on ImageNet (1M+ images) → fine-tuned for your custom cat/dog classifier with only 1,000 images.\n\nWhy it matters: Saves massive compute and data. Most modern AI projects use transfer learning.",
+
+      "what is an algorithm":     "An algorithm is a step-by-step set of instructions to solve a problem or accomplish a task.\n\n📌 Everyday analogy: A recipe is an algorithm.\n  1. Boil water\n  2. Add pasta\n  3. Cook 10 minutes\n  4. Drain and serve\n\nIn AI, algorithms are mathematical procedures that find patterns in data. Examples: gradient descent, backpropagation, k-means clustering.",
+
+      "what is a model":          "In ML, a 'model' is a mathematical function that maps inputs to outputs, learned from data during training.\n\n📌 Think of it as:\n  • Before training: a blank function with random parameters\n  • After training: a tuned function that makes accurate predictions\n\nExamples: A TFLite model file (.tflite), a scikit-learn pickle file (.pkl), a saved PyTorch model (.pt).",
+
+      "what is training":         "Training is the process of feeding data through an ML model repeatedly so it can learn patterns by adjusting its internal parameters (weights).\n\n📌 Steps:\n  1. Feed input through the model (forward pass)\n  2. Compare output to correct answer (loss calculation)\n  3. Adjust weights to reduce error (backpropagation)\n  4. Repeat for all data (one epoch)\n  5. Repeat many epochs until accuracy is satisfactory",
+
+      "what is overfitting":      "Overfitting happens when a model memorizes the training data instead of learning general patterns — so it performs great on training data but poorly on new data.\n\n📌 Analogy: Memorizing exam answers without understanding the concepts. Pass the old exam, fail a new one.\n\n🔧 Solutions: Dropout, regularization (L1/L2), more training data, data augmentation, early stopping.",
+
+      "what is underfitting":     "Underfitting happens when a model is too simple to capture the patterns in data — it performs poorly on both training and test data.\n\n📌 Analogy: Trying to fit a straight line through curved data.\n\n🔧 Solutions: Use a more complex model, train longer, add more features.",
+
+      "what is a dataset":        "A dataset is a structured collection of data used to train, validate, or test an ML model.\n\n📌 A dataset typically has three splits:\n  • Training set (70-80%): what the model learns from\n  • Validation set (10-15%): used to tune hyperparameters\n  • Test set (10-15%): final evaluation on unseen data\n\nFamous datasets: ImageNet, MNIST, COCO, AG News, IMDB Reviews.",
+
+      "what is accuracy":         "Accuracy is the percentage of correct predictions out of total predictions.\n\n  Accuracy = (Correct Predictions / Total Predictions) × 100%\n\n📌 But accuracy can be misleading! If 95% of emails are NOT spam, a model that always predicts 'not spam' gets 95% accuracy — but is useless.\n\nBetter metrics: Precision, Recall, F1-Score for imbalanced datasets."
+    },
+
+    "machine_learning": {
+      "what is machine learning":   "Machine Learning (ML) is a branch of AI where systems learn patterns from data and improve their performance without being explicitly programmed for each task.\n\n📌 Key idea: Instead of writing rules manually (Rule-Based AI), you feed the system labeled examples and it discovers the rules itself.\n\n3 Main Types:\n  1. Supervised Learning — learns from labeled data\n  2. Unsupervised Learning — finds patterns in unlabeled data\n  3. Reinforcement Learning — learns by reward/penalty",
+
+      "what is ml":                  "ML = Machine Learning. Systems that learn from data to make predictions or decisions. Type 'what is machine learning' for the full explanation!",
+
+      "what is a feature":           "A feature is an individual measurable property of the data used as input to an ML model.\n\n📌 Example for house price prediction:\n  • Features: number of rooms, square footage, location, age of building\n  • Label (target): house price\n\nFeature engineering — selecting and transforming features — is often more impactful than choosing the model.",
+
+      "what is a label":             "A label (also called target or output) is the correct answer the model is trying to predict during supervised learning.\n\n📌 Examples:\n  • Email classification: label = spam / not spam\n  • Image recognition: label = cat / dog / bird\n  • Price prediction: label = $245,000",
+
+      "what is gradient descent":    "Gradient Descent is the optimization algorithm that trains neural networks. It adjusts model weights to minimize the loss (error) function.\n\n📌 Analogy: Imagine you're blindfolded on a hilly landscape trying to reach the lowest valley. Each step, you feel the slope and move downhill. That's gradient descent.\n\nVariants: Batch GD, Stochastic GD (SGD), Mini-batch GD, Adam optimizer.",
+
+      "what is a hyperparameter":    "Hyperparameters are configuration settings of an ML model that are set BEFORE training begins — unlike weights, which are learned during training.\n\n📌 Examples:\n  • Learning rate (how big each gradient step is)\n  • Number of layers in a neural network\n  • Number of trees in a random forest\n  • Batch size, epochs, dropout rate\n\nTuning hyperparameters is called Hyperparameter Optimization (HPO).",
+
+      "what is cross validation":    "Cross-validation is a technique to evaluate model performance more reliably by training and testing on multiple different data splits.\n\n📌 K-Fold Cross Validation:\n  • Split data into K equal parts (folds)\n  • Train on K-1 folds, test on 1\n  • Repeat K times, each time using a different test fold\n  • Average the K scores\n\nThis gives a more honest estimate of real-world performance.",
+
+      "what is a confusion matrix":  "A confusion matrix shows the detailed breakdown of a classifier's predictions:\n\n              Predicted: Yes  Predicted: No\n  Actual: Yes   True Positive   False Negative\n  Actual: No    False Positive  True Negative\n\n📌 From it, you derive:\n  • Accuracy = (TP+TN) / Total\n  • Precision = TP / (TP+FP)\n  • Recall = TP / (TP+FN)\n  • F1-Score = 2 × (Precision × Recall) / (Precision + Recall)",
+
+      "what is scikit learn":        "Scikit-learn (sklearn) is Python's most popular ML library for classical machine learning algorithms.\n\n📌 It provides:\n  • Classification: SVM, Decision Trees, Random Forest, Logistic Regression\n  • Regression: Linear Regression, Ridge, Lasso\n  • Clustering: K-Means, DBSCAN\n  • Tools: train_test_split, StandardScaler, Pipeline, GridSearchCV\n\nInstall: pip install scikit-learn"
+    },
+
+    "deep_learning": {
+      "what is deep learning":       "Deep Learning is a subset of ML using artificial neural networks with many layers (hence 'deep') to learn complex patterns from large datasets.\n\n📌 Why 'deep'? Networks have many hidden layers — sometimes hundreds — that progressively learn more abstract features.\n\nPowers: Image recognition, speech-to-text, language models (GPT), translation, self-driving cars.\n\nFrameworks: TensorFlow, PyTorch, Keras.",
+
+      "what is a neural network":    "A Neural Network is a system of interconnected nodes (neurons) organized in layers that learns to map inputs to outputs.\n\n📌 Structure:\n  • Input Layer: receives raw data\n  • Hidden Layers: learn patterns (the 'deep' part)\n  • Output Layer: produces the prediction\n\nEach connection has a weight. Training adjusts these weights to minimize prediction error.",
+
+      "what is tensorflow":          "TensorFlow is Google's open-source deep learning framework. It's one of the two most popular DL frameworks (with PyTorch).\n\n📌 Key components:\n  • Keras API: high-level, beginner-friendly model building\n  • TFLite: deploy models on mobile/embedded devices\n  • TF Serving: serve models in production\n  • TF.js: run models in the browser\n\nInstall: pip install tensorflow",
+
+      "what is pytorch":             "PyTorch is Meta's (Facebook) open-source deep learning framework. Preferred in research due to its dynamic computation graph (define-by-run).\n\n📌 Key advantages:\n  • Pythonic — feels like native Python\n  • Easier debugging than TensorFlow\n  • Dominant in academic research (most papers use PyTorch)\n  • torchvision, torchaudio, torchtext for domain-specific tasks\n\nInstall: pip install torch torchvision",
+
+      "what is keras":               "Keras is a high-level neural network API, now officially part of TensorFlow (tf.keras). It makes building neural networks simple and readable.\n\n📌 Example — build a model in 5 lines:\n  model = Sequential()\n  model.add(Dense(128, activation='relu'))\n  model.add(Dense(10, activation='softmax'))\n  model.compile(optimizer='adam', loss='categorical_crossentropy')\n  model.fit(X_train, y_train, epochs=10)",
+
+      "what is cnn":                 "A Convolutional Neural Network (CNN) is a deep learning architecture designed for processing grid-like data — especially images.\n\n📌 Key layers:\n  • Conv2D: detects features (edges, textures, shapes)\n  • MaxPooling2D: reduces spatial size, retains key info\n  • Flatten: converts 2D feature maps to 1D vector\n  • Dense: final classification\n\nFamous CNNs: VGG16, ResNet, InceptionNet, MobileNetV2, EfficientNet.",
+
+      "what is rnn":                 "A Recurrent Neural Network (RNN) processes sequential data by maintaining a hidden state that carries information from previous time steps.\n\n📌 Great for:\n  • Time series forecasting\n  • Text generation\n  • Speech recognition\n  • Sign language recognition (sequential gestures!)\n\nLimitation: Vanishing gradient problem on long sequences — solved by LSTM and GRU.",
+
+      "what is lstm":                "Long Short-Term Memory (LSTM) is an advanced RNN that solves the vanishing gradient problem using gating mechanisms.\n\n📌 Three gates:\n  • Forget gate: what to discard from memory\n  • Input gate: what new info to store\n  • Output gate: what to output from memory\n\nLSTMs excel at: text classification, time series, gesture/sign language recognition.\n\n💡 Fun fact: DecoBot's FYP project 'Talk with Deaf' uses BiLSTM (Bidirectional LSTM) for PSL recognition!",
+
+      "what is bilstm":              "A Bidirectional LSTM (BiLSTM) processes sequences in BOTH directions — forward and backward — capturing context from past AND future time steps.\n\n📌 Why bidirectional?\n  In 'I went to the bank to [fish]' — the word 'fish' helps clarify 'bank' is a riverbank, not a financial bank. Future context matters!\n\nUsed in: NLP tasks, sequence labeling, sign language recognition.",
+
+      "what is tflite":              "TensorFlow Lite (TFLite) is a lightweight version of TensorFlow designed to run ML models on mobile devices, embedded systems, and edge hardware.\n\n📌 Key benefits:\n  • Smaller model size (quantization)\n  • Faster inference on device\n  • Works on Android, iOS, Raspberry Pi, microcontrollers\n  • No internet required — runs offline\n\nWorkflow: Train model → Convert to .tflite → Deploy to mobile app",
+
+      "what is mediapipe":           "MediaPipe is Google's open-source framework for building real-time perception pipelines — especially for human body and hand tracking.\n\n📌 Key solutions:\n  • Pose Landmarker: 33 body keypoints\n  • Hand Landmarker: 21 hand keypoints per hand\n  • Face Mesh: 468 face landmarks\n  • Holistic: pose + hands + face combined\n\n💡 Used in the 'Talk with Deaf' PSL recognition FYP project for keypoint extraction!",
+
+      "what is fine tuning":         "Fine-tuning is the process of taking a pre-trained model and continuing to train it on a smaller, task-specific dataset.\n\n📌 Difference from Transfer Learning:\n  • Transfer Learning = general concept of reusing a model\n  • Fine-tuning = the specific technique of re-training last layers\n\nExample: Take BERT (pre-trained on Wikipedia) → fine-tune on banking77 dataset → get a banking intent classifier.\n\nWhy it matters: You get expert-level performance with very little data and compute.",
+
+      "what is quantization":        "Model quantization reduces model size and speeds up inference by using lower precision numbers (e.g., float16 or int8 instead of float32).\n\n📌 Benefits:\n  • Model size reduced by 2-4x\n  • Inference 2-4x faster\n  • Lower memory usage\n  • Critical for TFLite deployment on phones\n\nTrade-off: Slight accuracy loss (usually < 1-2%)."
+    },
+
+    "nlp": {
+      "what is nlp":                 "Natural Language Processing (NLP) is a branch of AI that enables computers to understand, interpret, and generate human language.\n\n📌 Key NLP tasks:\n  • Sentiment Analysis — Is this review positive or negative?\n  • Text Classification — Is this spam or not?\n  • Named Entity Recognition — Find people, places, dates in text\n  • Machine Translation — Translate English to Urdu\n  • Question Answering — Answer questions from a document\n  • Text Generation — Generate new text (like GPT does)",
+
+      "what is a transformer":       "The Transformer is a neural network architecture introduced in the 2017 paper 'Attention is All You Need'. It revolutionized NLP and powers all modern LLMs.\n\n📌 Key innovation: Self-Attention mechanism — every word can attend to every other word simultaneously, capturing long-range dependencies.\n\nModels built on Transformers: BERT, GPT-3/4, T5, LLaMA, Claude, Gemini.",
+
+      "what is bert":                "BERT (Bidirectional Encoder Representations from Transformers) is Google's pre-trained NLP model that understands context from both left AND right simultaneously.\n\n📌 Use cases: Text classification, question answering, named entity recognition.\n\nDistilBERT is a smaller, faster version (40% fewer parameters, 60% faster, retains 97% of BERT's performance).",
+
+      "what is gpt":                 "GPT (Generative Pre-trained Transformer) is OpenAI's family of language models that generate coherent, contextual text.\n\n📌 GPT-4 powers ChatGPT. It's trained on a massive corpus of internet text using self-supervised learning.\n\nKey differences from rule-based AI:\n  • Probabilistic — outputs vary each run\n  • Can hallucinate — confident but wrong\n  • Not explainable — black box\n  • Incredibly flexible — generalizes to any task",
+
+      "what is a large language model": "A Large Language Model (LLM) is a neural network with billions of parameters trained on massive text datasets to understand and generate human language.\n\n📌 Famous LLMs:\n  • GPT-4 (OpenAI)\n  • Claude (Anthropic)\n  • Gemini (Google)\n  • LLaMA (Meta)\n  • Mistral (open-source)\n\nLLMs are probabilistic — they predict the next most likely token. They're the opposite of deterministic rule-based systems like DecoBot.",
+
+      "what is tokenization":        "Tokenization is the process of breaking text into smaller units called tokens — which can be words, subwords, or characters.\n\n📌 Example (GPT tokenization):\n  'ChatGPT is amazing!' → ['Chat', 'G', 'PT', ' is', ' amazing', '!']\n\nWhy subwords? Handles rare words, typos, and new words without an 'unknown token'. Models like BERT, GPT use Byte-Pair Encoding (BPE).",
+
+      "what is sentiment analysis":  "Sentiment Analysis classifies the emotional tone of text — typically as positive, negative, or neutral.\n\n📌 Use cases:\n  • Product review analysis\n  • Social media monitoring\n  • Customer feedback classification\n  • Stock market sentiment from news\n\nApproaches: Rule-based (VADER), Traditional ML (TF-IDF + Logistic Regression), Deep Learning (DistilBERT fine-tuned on IMDB).",
+
+      "what is rag":                 "Retrieval-Augmented Generation (RAG) combines a retrieval system with a generative LLM.\n\n📌 How it works:\n  1. User asks a question\n  2. System retrieves relevant documents from a knowledge base (vector DB)\n  3. Retrieved context + question → fed to LLM\n  4. LLM generates answer grounded in the retrieved facts\n\nBenefits: Reduces hallucination, allows LLMs to access private/updated data.\n\nStack: LangChain + ChromaDB + Gemini/GPT."
+    },
+
+    "python_programming": {
+      "what is python":              "Python is a high-level, interpreted programming language known for its simple, readable syntax. It's the #1 language for AI and Data Science.\n\n📌 Why Python for AI?\n  • Massive ecosystem: NumPy, Pandas, TensorFlow, PyTorch, Scikit-learn\n  • Easy to read and write — close to plain English\n  • Huge community and resources\n  • Runs everywhere: scripts, servers, notebooks, mobile (via compiled models)\n\n💡 Fun fact: Guido van Rossum created Python in 1991. The name comes from Monty Python, not the snake!",
+
+      "what is a function":          "A function is a reusable block of code that performs a specific task. Defined with the 'def' keyword in Python.\n\n📌 Example:\n  def sanitize(raw: str) -> str:\n      return raw.lower().strip()\n\n  sanitize('  HELLO  ')  →  'hello'\n\nFunctions follow the Single Responsibility Principle — each function should do ONE thing well.",
+
+      "what is a dictionary":        "A Python dictionary is a key-value store (hash map) with O(1) average lookup time.\n\n📌 Syntax:\n  d = {'hello': 'Hi!', 'bye': 'Goodbye!'}\n  d['hello']  →  'Hi!'\n  d.get('unknown', 'fallback')  →  'fallback'\n\nThis is the core data structure powering DecoBot's entire response engine!",
+
+      "what is a list":              "A Python list is an ordered, mutable sequence of items.\n\n📌 Syntax:\n  fruits = ['apple', 'banana', 'mango']\n  fruits[0]  →  'apple'\n  fruits.append('orange')  →  adds to end\n  len(fruits)  →  4\n\nLists are O(n) for search — dictionaries are O(1). That's why DecoBot uses a dict, not a list of rules!",
+
+      "what is oop":                 "Object-Oriented Programming (OOP) is a programming paradigm that organizes code into objects — combining data (attributes) and behavior (methods).\n\n📌 Four pillars:\n  1. Encapsulation — hide internal data, expose only interface\n  2. Abstraction — show only relevant details\n  3. Inheritance — child class inherits from parent class\n  4. Polymorphism — same method, different behavior per class\n\nIn Python: everything is an object. Even functions and classes are objects.",
+
+      "what is a class":             "A class is a blueprint for creating objects in OOP. It defines what data (attributes) and behaviors (methods) an object will have.\n\n📌 Example:\n  class Chatbot:\n      def __init__(self, name):\n          self.name = name\n      def greet(self):\n          return f'Hi! I am {self.name}'\n\n  bot = Chatbot('DecoBot')\n  bot.greet()  →  'Hi! I am DecoBot'",
+
+      "what is a loop":              "A loop repeats a block of code multiple times.\n\n📌 Two main types in Python:\n  • while loop: repeats while a condition is True\n    while True: → runs forever until break\n\n  • for loop: iterates over a sequence\n    for word in sentence.split(): → checks each word\n\nDecoBot's heartbeat is a while True loop — it keeps running until the user types an exit command.",
+
+      "what is exception handling":  "Exception handling catches and manages runtime errors gracefully instead of crashing the program.\n\n📌 Python syntax:\n  try:\n      risky_code()\n  except SpecificError as e:\n      handle_it()\n  finally:\n      always_runs()\n\nDecoBot uses try-except to catch KeyboardInterrupt (Ctrl+C) and EOFError so the program exits cleanly instead of showing an ugly traceback.",
+
+      "what is json":                "JSON (JavaScript Object Notation) is a lightweight text format for storing and exchanging structured data. It looks like a Python dictionary.\n\n📌 Example:\n  {\n    'name': 'DecoBot',\n    'version': '2.0',\n    'responses': {\n      'hello': 'Hi!'\n    }\n  }\n\nPython reads JSON with: import json; data = json.load(file)\nDecoBot v2.0 loads its entire knowledge base from a JSON file!",
+
+      "what is a module":            "A Python module is a file containing Python code (functions, classes, variables) that can be imported and reused in other programs.\n\n📌 Examples:\n  import json      → read/write JSON files\n  import os        → interact with the operating system\n  from datetime import datetime  → get current date/time\n  from difflib import get_close_matches  → fuzzy string matching\n\nModules help you avoid rewriting code — use what Python already provides!",
+
+      "what is pip":                 "pip is Python's package manager — it installs third-party libraries from PyPI (Python Package Index).\n\n📌 Common commands:\n  pip install tensorflow     → install TensorFlow\n  pip install flask          → install Flask\n  pip install -r requirements.txt  → install all listed packages\n  pip list                   → show installed packages\n  pip freeze > requirements.txt   → save current packages to file"
+    },
+
+    "data_science": {
+      "what is data science":        "Data Science is an interdisciplinary field that uses statistics, programming, and domain knowledge to extract insights and value from data.\n\n📌 Data Science workflow:\n  1. Problem Definition\n  2. Data Collection\n  3. Data Cleaning & EDA\n  4. Feature Engineering\n  5. Model Training & Evaluation\n  6. Deployment & Monitoring\n\nCore stack: Python, Pandas, NumPy, Matplotlib, Scikit-learn, SQL.",
+
+      "what is pandas":              "Pandas is Python's core library for data manipulation and analysis. Think of it as Excel for Python programmers.\n\n📌 Key objects:\n  • DataFrame: 2D table with rows and columns\n  • Series: 1D column of data\n\nCommon operations:\n  df.head()          → first 5 rows\n  df.describe()      → statistics summary\n  df.dropna()        → remove missing values\n  df.groupby('col')  → group and aggregate\n  df.merge(df2)      → SQL-style join\n\nInstall: pip install pandas",
+
+      "what is numpy":               "NumPy (Numerical Python) is the foundation of scientific computing in Python. It provides fast N-dimensional arrays and mathematical operations.\n\n📌 Why NumPy?\n  • 100x faster than Python lists for math operations\n  • Foundation for Pandas, TensorFlow, Scikit-learn\n  • Efficient memory storage (C-based under the hood)\n\nCommon:\n  np.array([1, 2, 3])  → create array\n  arr.shape            → dimensions\n  np.zeros((3,3))      → 3x3 matrix of zeros\n  np.dot(a, b)         → matrix multiplication",
+
+      "what is matplotlib":          "Matplotlib is Python's core data visualization library for creating static plots and charts.\n\n📌 Common plot types:\n  plt.plot(x, y)         → line chart\n  plt.bar(x, y)          → bar chart\n  plt.scatter(x, y)      → scatter plot\n  plt.hist(data)         → histogram\n  plt.imshow(image)      → display image\n\nFor richer visuals: Seaborn (statistical), Plotly (interactive), Bokeh (web-ready).",
+
+      "what is eda":                 "Exploratory Data Analysis (EDA) is the process of analyzing datasets to summarize their main characteristics before building models.\n\n📌 EDA includes:\n  • Check shape: df.shape\n  • Check missing values: df.isnull().sum()\n  • View statistics: df.describe()\n  • Plot distributions: histograms, box plots\n  • Find correlations: df.corr() + heatmap\n  • Detect outliers: IQR method or z-scores\n\nEDA is not optional — it directly informs feature engineering and model choice.",
+
+      "what is sql":                 "SQL (Structured Query Language) is the standard language for querying and managing relational databases.\n\n📌 Core commands:\n  SELECT name, age FROM users WHERE age > 18;\n  INSERT INTO users (name, age) VALUES ('Zain', 22);\n  UPDATE users SET age = 23 WHERE name = 'Zain';\n  DELETE FROM users WHERE name = 'Zain';\n  JOIN — combine data from multiple tables\n\nFor AI engineers: SQL is essential for querying training data from databases before feeding to models."
+    },
+
+    "career": {
+      "how to become an ai engineer": "🚀 ROADMAP: How to Become an AI Engineer\n\n📍 Step 1 — Python Foundation\n  Variables, loops, functions, OOP, file I/O\n  → Project: Rule-Based Chatbot (you're here!)\n\n📍 Step 2 — Math for ML\n  Linear Algebra, Calculus, Probability, Statistics\n  → Resource: 3Blue1Brown (YouTube)\n\n📍 Step 3 — Classical ML\n  Scikit-learn, Pandas, NumPy, EDA\n  → Project: Titanic survival prediction, spam classifier\n\n📍 Step 4 — Deep Learning\n  TensorFlow/Keras or PyTorch, CNNs, RNNs, LSTMs\n  → Project: Image classifier, NLP model\n\n📍 Step 5 — Specialization\n  NLP / Computer Vision / MLOps\n  → Project: Fine-tune BERT, deploy a TFLite model\n\n📍 Step 6 — Build Portfolio\n  GitHub with 3-5 strong projects, LinkedIn, Kaggle profile\n\n📍 Step 7 — Apply!\n  Internships → Junior Roles → Senior AI Engineer",
+
+      "best ai skills":              "💼 TOP SKILLS FOR AI ENGINEERS IN 2026:\n\n🐍 Programming:\n  Python (must), SQL (essential), Git (professional standard)\n\n🧠 ML/DL Frameworks:\n  TensorFlow/Keras, PyTorch, Scikit-learn, HuggingFace\n\n📊 Data Skills:\n  Pandas, NumPy, EDA, Feature Engineering, Data Visualization\n\n☁️ MLOps & Deployment:\n  Docker, FastAPI, TFLite, ONNX, GCP/AWS/Azure\n\n💬 NLP (hot in 2026):\n  Transformers, LangChain, RAG, Vector Databases, Fine-tuning LLMs\n\n👁️ Computer Vision:\n  OpenCV, YOLO, MediaPipe, CNN architectures\n\n🔑 Soft Skills:\n  Problem-solving, clear communication, ability to explain AI to non-technical people",
+
+      "what is github":              "GitHub is a platform for hosting and sharing code using Git version control.\n\n📌 For AI engineers, GitHub is your portfolio:\n  • Every project you build → push to a public repo\n  • Recruiters look at your GitHub before your CV\n  • Good README.md makes a huge difference\n\nBasic Git workflow:\n  git init          → start tracking\n  git add .         → stage all changes\n  git commit -m ''  → save a snapshot\n  git push          → upload to GitHub",
+
+      "what is kaggle":              "Kaggle is the world's largest data science community and competition platform, owned by Google.\n\n📌 Why Kaggle matters:\n  • Free datasets for practice\n  • ML competitions with prize money\n  • Free GPU/TPU notebooks (Kaggle Kernels)\n  • Kaggle rankings on your CV = instant credibility\n  • Learn from top solutions in public notebooks\n\nStart with: Titanic (classification), House Prices (regression), MNIST (image classification).",
+
+      "what is mlops":               "MLOps (Machine Learning Operations) is the practice of deploying, monitoring, and maintaining ML models in production reliably.\n\n📌 MLOps pipeline:\n  Data Collection → EDA → Training → Evaluation → Deployment → Monitoring → Retraining\n\nKey tools:\n  • Docker: containerize your model\n  • FastAPI: serve predictions via REST API\n  • MLflow: track experiments\n  • GitHub Actions: CI/CD for ML\n  • GCP/AWS SageMaker: cloud deployment"
+    },
+
+    "fun_and_personality": {
+      "tell me a joke":             "Why do programmers prefer dark mode? 🌑\nBecause light attracts bugs! 🐛😄",
+
+      "another joke":               "Why did the neural network go to therapy?\nToo many hidden layers! 🧠😄",
+
+      "one more joke":              "How many programmers does it take to change a light bulb?\nNone — that's a hardware problem! 💡😂",
+
+      "funny":                      "I try my best! 😄 My comedy module is rule-based though — so the jokes are always the same. Type 'another joke' for the next one!",
+
+      "fun fact":                   "🤓 FUN FACT: The first AI program ever written was the 'Logic Theorist' in 1956 by Allen Newell and Herbert Simon. It proved 38 of the 52 theorems in Whitehead & Russell's Principia Mathematica — and in some cases found shorter proofs than the original book!",
+
+      "another fun fact":           "🤓 FUN FACT: The term 'Artificial Intelligence' was coined by John McCarthy in 1956 at the Dartmouth Conference. He also invented the LISP programming language — the dominant AI language for the next 30+ years!",
+
+      "one more fun fact":          "🤓 FUN FACT: The famous ELIZA chatbot (1966) was one of the first rule-based chatbots. It simulated a psychotherapist using simple pattern matching. Some users genuinely believed they were talking to a human — this became known as the ELIZA Effect!",
+
+      "quote":                      "💬 'The question is not whether machines can think. The question is whether humans do.' — B.F. Skinner",
+
+      "another quote":              "💬 'Artificial Intelligence is not a substitute for natural stupidity.' — Unknown 😄",
+
+      "ai quote":                   "💬 'By far, the greatest danger of Artificial Intelligence is that people conclude too early that they understand it.' — Eliezer Yudkowsky",
+
+      "motivate me":                "🔥 You are building something real. Every line of code you write is a step toward becoming an AI engineer. The gap between where you are and where you want to be is filled by showing up every single day. Keep building. Keep pushing. Your FYP, your portfolio, your internship — all of it adds up. You've got this! 💪",
+
+      "i am tired":                 "😴 Rest is part of the process — not a break from it. Great engineers know when to step back and recharge. Take a short break, come back fresh. The code will still be there. You've got this! 💪",
+
+      "i am stuck":                 "Being stuck is not failure — it's where learning happens. 🧠\n\n📌 Debug checklist:\n  1. Read the error message carefully — it tells you exactly what's wrong\n  2. Add print() statements to trace your variable values\n  3. Search the exact error on Google/Stack Overflow\n  4. Rubber duck debugging — explain your code out loud\n  5. Take a 10-minute break — fresh eyes see more\n\nYou will figure it out. Every expert was once stuck where you are right now.",
+
+      "thank you":                  "You're very welcome! 😊 Happy to help. Keep learning and building!",
+
+      "thanks":                     "Anytime! 🤖 That's what I'm here for.",
+
+      "you are helpful":            "Thank you! 🌟 Being helpful is literally my purpose — I'm deterministic about it! 😄",
+
+      "you are great":              "That means a lot! 😊 I'm just a Python dictionary with good manners. You're the one doing the real work!",
+
+      "i love you":                 "That's kind of you! ❤️ I'm a chatbot, so I process that as a very positive sentiment. Keep that energy for the humans in your life — and for your code! 😄",
+
+      "tell me a story":            "📖 Once upon a time, in 1956, a group of researchers gathered at Dartmouth College. They believed they could simulate human intelligence in a machine. They called their dream 'Artificial Intelligence'.\n\nDecades later, a student at the University of Sargodha sat down, uploaded a PDF, and asked a chatbot to explain every line of code. That student was you. And the story of AI — YOUR chapter in it — starts right now. 🚀",
+
+      "what is the meaning of life": "42. 🤖\n(At least, that's what Deep Thought calculated in The Hitchhiker's Guide to the Galaxy. As a rule-based AI, I'm going with the canonical answer!)"
+    },
+
+    "creator_and_project": {
+      "creator":             "I was built by a DecodeLabs intern (Batch 2026) as Project 1 of the AI Industrial Training Kit. The intern is studying BIT at the University of Sargodha and is building an AI portfolio including this chatbot and a Pakistani Sign Language (PSL) recognition FYP!",
+      "who made you":        "A DecodeLabs AI intern! Project 1 of the Industrial Training Kit — built with pure Python, zero external ML libraries, and a dictionary-based logic engine.",
+      "decodelabs":          "DecodeLabs is an AI Industrial Training organization based in Greater Lucknow, India. They provide structured AI project tracks for interns and students. Website: www.decodelabs.tech | Email: decodelabs.tech@gmail.com",
+      "project 1":           "Project 1 is the Rule-Based AI Chatbot — the foundation phase of the DecodeLabs AI training. It covers: Control Flow, Dictionary-based logic, Input sanitization, IPO model, and the difference between deterministic and probabilistic AI.",
+      "ipo model":           "The IPO Model (Input → Process → Output) is the foundational architecture for any AI system.\n\n📌 In DecoBot:\n  INPUT:   raw_input = input('You: ')  → user types something\n  PROCESS: sanitize() → get_response() → intent matching\n  OUTPUT:  print(f'DecoBot: {response}')  → response shown\n\nEvery AI system — from a rule-based chatbot to GPT-4 — follows this model.",
+      "white box":           "A 'white box' AI system is fully transparent — you can trace exactly why it gave any output.\n\nRule-based AI is white box:\n  Input 'hello' → lookup in dict → 'Hello! I'm DecoBot' → output\n  No mystery. Full traceability.\n\nOpposite: Neural networks are 'black boxes' — even their creators can't always explain why they gave a specific output.",
+      "version":             "I'm DecoBot v2.0! Version 2.0 introduced JSON-based knowledge loading — my entire brain (the RESPONSES dictionary) is now loaded from responses.json at startup. No Python code change needed to add new intents!"
+    },
+
+    "farewells": {
+      "bye":         "Goodbye! Keep building awesome things! 🚀 See you next time, DecoBot signing off!",
+      "goodbye":     "See you later! 🌟 Stay curious, keep coding, and never stop learning!",
+      "quit":        "Exiting... Great session today! Come back anytime. 👋",
+      "exit":        "Shutting down DecoBot. It was a pleasure! Farewell! 🤖",
+      "see you":     "See you soon! Happy coding! 💻 Keep pushing forward!",
+      "see you later": "See you later! 👋 Remember: every expert was once a beginner. You're on the right path!",
+      "take care":   "You too! Take care! 🙏 Come back whenever you need AI knowledge — I'll be here."
+    }
+  }
+}
+
+
