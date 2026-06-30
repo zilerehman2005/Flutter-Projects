@@ -44,7 +44,7 @@ The app is organized around a few core parts:
 
 ### Chat Screen
 
-<img width="698" height="1463" alt="chat" src="https://github.com/user-attachments/assets/cee0e70e-e434-4069-8dbf-c38774445656" />
+<img width="400" height="1000" alt="chat" src="https://github.com/user-attachments/assets/cee0e70e-e434-4069-8dbf-c38774445656" />
 
 
 ### Dark Mode
