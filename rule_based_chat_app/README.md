@@ -38,7 +38,7 @@ The app is organized around a few core parts:
 
 ### Home Screen
 
-<img width="400" alt="home" src="https://github.com/user-attachments/assets/13eb7633-00b5-41ce-8cb3-4f73629a07b8" />
+<img width="300" alt="home" src="https://github.com/user-attachments/assets/13eb7633-00b5-41ce-8cb3-4f73629a07b8" />
 
 
 
@@ -54,7 +54,7 @@ The app is organized around a few core parts:
 
 ### Conversation History
 
-<img width="400" alt="conversation" src="https://github.com/user-attachments/assets/5da5c1b3-d6dd-421c-85da-741a0847ba22" />
+<img width="300" alt="conversation" src="https://github.com/user-attachments/assets/5da5c1b3-d6dd-421c-85da-741a0847ba22" />
 
 
 ## Project Structure
