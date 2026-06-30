@@ -38,23 +38,23 @@ The app is organized around a few core parts:
 
 ### Home Screen
 
-<img width="400" height="800" alt="home" src="https://github.com/user-attachments/assets/13eb7633-00b5-41ce-8cb3-4f73629a07b8" />
+<img width="400" alt="home" src="https://github.com/user-attachments/assets/13eb7633-00b5-41ce-8cb3-4f73629a07b8" />
 
 
 
 ### Chat Screen
 
-<img width="300" height="800" alt="chat" src="https://github.com/user-attachments/assets/cee0e70e-e434-4069-8dbf-c38774445656" />
+<img width="300"  alt="chat" src="https://github.com/user-attachments/assets/cee0e70e-e434-4069-8dbf-c38774445656" />
 
 
 ### Dark Mode
 
-<img width="300" height="600" alt="dark" src="https://github.com/user-attachments/assets/676b6b92-ad25-4257-84c7-a948797a0e9d" />
+<img width="300"  alt="dark" src="https://github.com/user-attachments/assets/676b6b92-ad25-4257-84c7-a948797a0e9d" />
 
 
 ### Conversation History
 
-<img width="400" height="800" alt="conversation" src="https://github.com/user-attachments/assets/5da5c1b3-d6dd-421c-85da-741a0847ba22" />
+<img width="400" alt="conversation" src="https://github.com/user-attachments/assets/5da5c1b3-d6dd-421c-85da-741a0847ba22" />
 
 
 ## Project Structure
