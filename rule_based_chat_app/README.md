@@ -44,12 +44,12 @@ The app is organized around a few core parts:
 
 ### Chat Screen
 
-<img width="400" height="800" alt="chat" src="https://github.com/user-attachments/assets/cee0e70e-e434-4069-8dbf-c38774445656" />
+<img width="300" height="800" alt="chat" src="https://github.com/user-attachments/assets/cee0e70e-e434-4069-8dbf-c38774445656" />
 
 
 ### Dark Mode
 
-<img width="400" height="800" alt="dark" src="https://github.com/user-attachments/assets/676b6b92-ad25-4257-84c7-a948797a0e9d" />
+<img width="300" height="600" alt="dark" src="https://github.com/user-attachments/assets/676b6b92-ad25-4257-84c7-a948797a0e9d" />
 
 
 ### Conversation History
