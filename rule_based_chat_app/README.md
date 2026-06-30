@@ -38,19 +38,24 @@ The app is organized around a few core parts:
 
 ### Home Screen
 
-![Home](screenshots/home.png)
+<img width="698" height="1450" alt="home" src="https://github.com/user-attachments/assets/13eb7633-00b5-41ce-8cb3-4f73629a07b8" />
+
+
 
 ### Chat Screen
 
-![Chat](screenshots/chat.png)
+<img width="698" height="1463" alt="chat" src="https://github.com/user-attachments/assets/cee0e70e-e434-4069-8dbf-c38774445656" />
+
 
 ### Dark Mode
 
-![Dark](screenshots/dark_mode.png)
+<img width="698" height="1458" alt="dark" src="https://github.com/user-attachments/assets/676b6b92-ad25-4257-84c7-a948797a0e9d" />
+
 
 ### Conversation History
 
-![History](screenshots/history.png)
+<img width="698" height="1458" alt="conversation" src="https://github.com/user-attachments/assets/5da5c1b3-d6dd-421c-85da-741a0847ba22" />
+
 
 ## Project Structure
 
@@ -136,10 +141,10 @@ Display Reply
 
 ## Author
 
-- Name: Your Name
-- GitHub: https://github.com/your-username
-- LinkedIn: https://www.linkedin.com/in/your-linkedin
-- Email: your.email@example.com
+- Name: Zille Rehman
+- GitHub: https://github.com/zilerehman2005
+- LinkedIn: https://www.linkedin.com/in/zillerehman05/
+- Email: zillerehman004@gmail.com
 
 ## License
 
